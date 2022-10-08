@@ -5,14 +5,14 @@ project(navi_control_test_dynamixel)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   std_msgs
-  navi_old_humanoid_msgs
+  navi_proto_humanoid_msgs
 )
 
 
 catkin_package(
   INCLUDE_DIRS include
 #  LIBRARIES navi_control_test
-  CATKIN_DEPENDS roscpp std_msgs navi_old_humanoid_msgs
+  CATKIN_DEPENDS roscpp std_msgs navi_proto_humanoid_msgs
 #  DEPENDS system_lib
 )
 
