@@ -12,7 +12,7 @@ float map(float x, float in_min, float in_max, float out_min, float out_max)
 }
 
 void counterCallback(const navi_proto_humanoid_msgs::Humanoid& angle_data){
-    //ROS_INFO("servo_head_1: %f", angle_data.servo_head.servo1);
+    ROS_INFO("servo_head_1: %f", angle_data.servo_head[0]);
 
     ControlPublisher.publish(angle_data);
 }
