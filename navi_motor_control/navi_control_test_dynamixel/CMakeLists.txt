@@ -11,9 +11,9 @@ find_package(catkin REQUIRED COMPONENTS
 
 catkin_package(
   INCLUDE_DIRS include
-#  LIBRARIES navi_control_test
+  LIBRARIES navi_control_test_dynamixel_node
   CATKIN_DEPENDS roscpp std_msgs navi_proto_humanoid_msgs
-#  DEPENDS system_lib
+  DEPENDS system_lib
 )
 
 include_directories(include ${catkin_INCLUDE_DIRS} )
